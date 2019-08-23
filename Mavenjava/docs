@@ -1,0 +1,75 @@
+Maven 
+Software management tool 
+Working multiple people, when you are using Jenkins you must management tools like maven
+All jars in maven repository, maintain consistency and one common framework structure skeleton, test project one template, maven has different template for example java development. Test development,
+Maven in five-minute tutorial
+Pom.xml file is very important
+Install java first, plus path, download java apache maven. Five the two-file system variable path
+Checking in cmd    
+Maven –version
+
+Package name is groupId
+Artifact id is project name 
+Version 
+You need to put test at then of every test case with maven 
+Put the project in maven repository if some want to download it give them the group id and artifact id  
+
+Creating maven project through the command line 
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+in order to integrate to eclipse you need do create one file. classpath and. project be default it does not present then import to eclipse-> go to the pom path in cmd then give this command 
+maven eclipse:eclipse then will create the file in pom level
+
+check maven plugs in eclipse then preference->maven->user setting  
+import maven existing project
+pom is project level 
+you will not get by default, maven surefile plugin, copy the dependency and place it pom.xml. you can execute all you test case by surefile plugin 
+the command you are running from cmd should be from pom.xml file 
+maven clean, compile (checking syntax error)
+maven test does all three in one automatically 
+just maven test in Jenkins 
+first will check the local folder for jars if exist if not then will download it in the local file 
+integrating testNg with maven you need the xml file to create 
+running testng xml from maven copy the dependency form surefire past it in pom.xml
+testng congigation will run based on our configuration 
+run single test case maven -Dtest-testcasename.test from cmd
+creating two testng xml one regression and smoke test how to rum it from pom xml 
+you can do so with profiles->profile
+
+
+udemy 
+
+
+Maven –
+Apache Maven is a software project management and build management tool for Java Frameworks.
+1.	Why Maven?
+•	Central repository to get dependencies
+•	Maintaining common structure across the organization
+•	Flexibility in Integrating with CI tools
+•	Plugins for Test framework execution.
+2.	Install Maven
+3.	Set System variables to recognize Maven
+4.	Understanding Maven terminologies
+ Artifact: An artifact is a file, usually a JAR, that gets deployed to a Maven repository.
+ GroupId: groupId will identify your project uniquely across all projects,
+ archetype:generate ; Generates a new project from an archetype
+5.	Creating Maven Project
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+6.	Integrate Maven with Eclipse
+7.	Maven Phases for Test Automation
+8.	Clean, compile, test
+9.	Understanding POM.xml file dependencies..
+10.	How to find the dependencies of the Softwares?
+11.	Importance of Maven Sure fire plugin
+12.	Running Tests with Surefireplugin
+13.	Integrating Testng into Maven
+14.	Testng xml files configuration in POM file
+15.	Setting up Profiles in POM.xml file
+16.	Running selected Tests only with Maven commands
+17.	Maven Sure fire reports
+
+
+
+
+ 
