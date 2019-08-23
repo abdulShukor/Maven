@@ -70,6 +70,21 @@ mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -Darchety
 17.	Maven Sure fire reports
 
 
+Jenkins 
+Real live everyday use. developed for automation, user friendly, download the jar then go the command line write java -jar Jenkins.war -httpPort = 9090 you have tell the cmd where is located the jar for Jenkins 
+Take the local host
+After configuration you pull project from GitHub or locally to Jenkins 
+Copy your project and past it in .jenkins folder   if locally 
+Then command ${JENKINS_HOME}/Project name
+Result in surefire folder in project go to index.xml copy the link
+Test-resulr.xml 
+Install in Jenkins the manage plugins tools 
+Scheduling 
+Jenkins accept five parameters 
+Minutes    hours   day    month            day of the week 
+•	*means to rum every
+
+
 
 
  
